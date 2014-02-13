@@ -16,6 +16,7 @@ namespace MultiToolProgram
         String username;
         String password;
         Boolean firstLoad = Properties.Settings.Default.firstLoad;
+        Boolean loginSuccessful;
         //End of Variable Declaration
 
         public loginForm()
@@ -55,7 +56,19 @@ namespace MultiToolProgram
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i <= 10;i++)
+            {
 
+            }
+            if (loginSuccessful == true)
+            {
+                var frm = new mainApplicationForm();
+                frm.Show(this);
+            }
+            else
+            {
+                //System.Windows.Forms.MessageBox("Login Failed","Password or Username Wrong",System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
         }
     }
 }
