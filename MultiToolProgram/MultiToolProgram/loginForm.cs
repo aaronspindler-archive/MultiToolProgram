@@ -12,9 +12,50 @@ namespace MultiToolProgram
 {
     public partial class loginForm : Form
     {
+        //Variable Declaration Start
+        String username;
+        String password;
+        Boolean firstLoad = Properties.Settings.Default.firstLoad;
+        //End of Variable Declaration
+
         public loginForm()
         {
             InitializeComponent();
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+            if (firstLoad == true)
+            {
+                var frm = new createYourUserForm();
+                frm.Show(this);
+                firstLoad = false;
+            }
+            else
+            {
+                firstLoad = false;
+            }
+            Properties.Settings.Default.firstLoad = firstLoad;
+            Properties.Settings.Default.Save();
+        }
+
+        private void usernameField_TextChanged(object sender, EventArgs e)
+        {
+            username = usernameField.Text;
+            Properties.Settings.Default.Username = username;
+            Properties.Settings.Default.Save();
+        }
+
+        private void passwordField_TextChanged(object sender, EventArgs e)
+        {
+            password = passwordField.Text;
+            Properties.Settings.Default.Password = password;
+            Properties.Settings.Default.Save();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
