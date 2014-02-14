@@ -40,5 +40,11 @@ namespace MultiToolProgram
             var frm = new userSettingsForm();
             frm.Show(this);
         }
+
+        private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new randomPasswordGeneratorForm();
+            frm.Show(this);
+        }
     }
 }

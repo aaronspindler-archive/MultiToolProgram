@@ -39,6 +39,7 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomPasswordGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -90,6 +91,8 @@
             // 
             // programsToolStripMenuItem
             // 
+            this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.randomPasswordGeneratorToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(151, 67);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -139,6 +142,13 @@
             this.resetToDefaultToolStripMenuItem.Size = new System.Drawing.Size(303, 44);
             this.resetToDefaultToolStripMenuItem.Text = "Reset To Default";
             // 
+            // randomPasswordGeneratorToolStripMenuItem
+            // 
+            this.randomPasswordGeneratorToolStripMenuItem.Name = "randomPasswordGeneratorToolStripMenuItem";
+            this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
+            this.randomPasswordGeneratorToolStripMenuItem.Text = "Random Password Generator";
+            this.randomPasswordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.randomPasswordGeneratorToolStripMenuItem_Click);
+            // 
             // mainApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -170,5 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userSettingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetToDefaultToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem randomPasswordGeneratorToolStripMenuItem;
     }
 }
