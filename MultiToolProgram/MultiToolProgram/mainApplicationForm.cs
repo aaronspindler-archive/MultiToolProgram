@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace MultiToolProgram
 {
+    //@author xNovax
     public partial class mainApplicationForm : Form
     {
         public mainApplicationForm()
@@ -21,6 +22,11 @@ namespace MultiToolProgram
         {
             var frm = new AboutBox();
             frm.Show(this);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

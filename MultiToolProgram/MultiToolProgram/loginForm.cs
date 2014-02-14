@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultiToolProgram
+    //@author xNovax
 {
     public partial class loginForm : Form
     {
@@ -56,9 +57,11 @@ namespace MultiToolProgram
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i <= 10;i++)
+            Console.WriteLine(username);
+            Console.WriteLine(password);
+            if ((username.Equals("xNovax"))&&(password.Equals("password")))
             {
-
+                loginSuccessful = true;
             }
             if (loginSuccessful == true)
             {
@@ -67,7 +70,8 @@ namespace MultiToolProgram
             }
             else
             {
-                //System.Windows.Forms.MessageBox("Login Failed","Password or Username Wrong",System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                loginSuccessful = false;
+                MessageBox.Show("Wrong Username or Password","Login Failed",System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
     }
