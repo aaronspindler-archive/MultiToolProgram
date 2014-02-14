@@ -28,5 +28,17 @@ namespace MultiToolProgram
         {
             this.Close();
         }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new optionsForm();
+            frm.Show(this);
+        }
+
+        private void userSettingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new userSettingsForm();
+            frm.Show(this);
+        }
     }
 }

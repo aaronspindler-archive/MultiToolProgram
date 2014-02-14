@@ -124,12 +124,14 @@
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(303, 44);
             this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // userSettingToolStripMenuItem
             // 
             this.userSettingToolStripMenuItem.Name = "userSettingToolStripMenuItem";
             this.userSettingToolStripMenuItem.Size = new System.Drawing.Size(303, 44);
             this.userSettingToolStripMenuItem.Text = "User Setting";
+            this.userSettingToolStripMenuItem.Click += new System.EventHandler(this.userSettingToolStripMenuItem_Click);
             // 
             // resetToDefaultToolStripMenuItem
             // 
