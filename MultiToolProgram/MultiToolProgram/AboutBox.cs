@@ -11,6 +11,7 @@ namespace MultiToolProgram
 {
     partial class AboutBox : Form
     {
+        //@author xNovax
         public AboutBox()
         {
             InitializeComponent();

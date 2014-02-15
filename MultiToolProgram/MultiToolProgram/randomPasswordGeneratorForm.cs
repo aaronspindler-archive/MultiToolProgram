@@ -12,6 +12,7 @@ namespace MultiToolProgram
 {
     public partial class randomPasswordGeneratorForm : Form
     {
+        //@author xNovax
         //Variable Declaration
         decimal numberOfPasswords = 0;
         static int PASSWORD_LENGTH = 16;

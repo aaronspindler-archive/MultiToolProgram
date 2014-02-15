@@ -12,6 +12,7 @@ namespace MultiToolProgram
 {
     public partial class userSettingsForm : Form
     {
+        //@author xNovax
         public userSettingsForm()
         {
             InitializeComponent();

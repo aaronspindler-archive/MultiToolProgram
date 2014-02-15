@@ -12,6 +12,7 @@ namespace MultiToolProgram
 {
     public partial class optionsForm : Form
     {
+        //@author xNovax
         public optionsForm()
         {
             InitializeComponent();

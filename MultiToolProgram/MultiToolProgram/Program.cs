@@ -8,6 +8,7 @@ namespace MultiToolProgram
 {
     static class Program
     {
+        //@author xNovax
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

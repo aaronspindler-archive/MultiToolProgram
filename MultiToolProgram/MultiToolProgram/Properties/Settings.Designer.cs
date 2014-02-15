@@ -25,13 +25,13 @@ namespace MultiToolProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Username {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool firstLoad {
             get {
-                return ((string)(this["Username"]));
+                return ((bool)(this["firstLoad"]));
             }
             set {
-                this["Username"] = value;
+                this["firstLoad"] = value;
             }
         }
         
@@ -49,13 +49,13 @@ namespace MultiToolProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool firstLoad {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Username {
             get {
-                return ((bool)(this["firstLoad"]));
+                return ((string)(this["Username"]));
             }
             set {
-                this["firstLoad"] = value;
+                this["Username"] = value;
             }
         }
     }

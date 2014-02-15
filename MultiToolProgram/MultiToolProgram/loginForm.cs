@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultiToolProgram
-    //@author xNovax
 {
     public partial class loginForm : Form
     {
+        //@author xNovax
         //Variable Declaration Start
         String username;
         String password;

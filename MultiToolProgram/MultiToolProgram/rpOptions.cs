@@ -12,6 +12,7 @@ namespace MultiToolProgram
 {
     public partial class rpOptions : Form
     {
+        //@author xNovax
         public rpOptions()
         {
             InitializeComponent();
