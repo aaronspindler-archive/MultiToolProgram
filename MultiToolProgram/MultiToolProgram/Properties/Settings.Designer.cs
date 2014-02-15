@@ -25,7 +25,7 @@ namespace MultiToolProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool firstLoad {
             get {
                 return ((bool)(this["firstLoad"]));
@@ -56,6 +56,42 @@ namespace MultiToolProgram.Properties {
             }
             set {
                 this["Username"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool randomPassNormal {
+            get {
+                return ((bool)(this["randomPassNormal"]));
+            }
+            set {
+                this["randomPassNormal"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool randomPassNumber {
+            get {
+                return ((bool)(this["randomPassNumber"]));
+            }
+            set {
+                this["randomPassNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool randomPassSpecialChar {
+            get {
+                return ((bool)(this["randomPassSpecialChar"]));
+            }
+            set {
+                this["randomPassSpecialChar"] = value;
             }
         }
     }
