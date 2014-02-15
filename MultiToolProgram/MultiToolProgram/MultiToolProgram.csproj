@@ -82,6 +82,12 @@
     <Compile Include="randomPasswordGeneratorForm.Designer.cs">
       <DependentUpon>randomPasswordGeneratorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="rpOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpOptions.Designer.cs">
+      <DependentUpon>rpOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="userSettingsForm.cs">
       <SubType>Form</SubType>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="randomPasswordGeneratorForm.resx">
       <DependentUpon>randomPasswordGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpOptions.resx">
+      <DependentUpon>rpOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userSettingsForm.resx">
       <DependentUpon>userSettingsForm.cs</DependentUpon>
