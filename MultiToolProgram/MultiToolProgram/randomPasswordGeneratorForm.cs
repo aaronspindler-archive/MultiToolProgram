@@ -114,7 +114,12 @@ namespace MultiToolProgram
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(saveFileDialog.FileName);
                 for (int i = 0; i <= numberOfPasswords; i++)
                 {
-
+                    randomPassword();
+                    for (int x = 0; x <= PASSWORD_LENGTH;x++)
+                    {
+                        writer.Write(password[x]);
+                    }
+                    writer.WriteLine();
                 }
                 outputLabel.ForeColor = System.Drawing.Color.Black;
                 outputLabel.Text = ("Your passwords have been saved to: " + saveFileDialog.FileName);
