@@ -115,9 +115,11 @@ namespace MultiToolProgram
                 for (int i = 0; i <= numberOfPasswords; i++)
                 {
                     randomPassword();
-                    for (int x = 0; x <= PASSWORD_LENGTH;x++)
+                    for (int x = 0; x < PASSWORD_LENGTH; x++)
                     {
-                        writer.Write(password[x]);
+                        String passwordChar;
+                        passwordChar = password[x].ToString(); 
+                        writer.Write(passwordChar);
                     }
                     writer.WriteLine();
                 }
