@@ -16,7 +16,7 @@ namespace MultiToolProgram
         //Variable Declaration
         decimal numberOfPasswords = 0;
         static int PASSWORD_LENGTH = 16;
-        char[] password = new char[PASSWORD_LENGTH];
+        char[] password = new char[16];
         Boolean progressBarFull = false;
         Boolean errorOccured = false;
         //Array of characters that are allowed in the normal password type
@@ -118,11 +118,15 @@ namespace MultiToolProgram
                     for (int x = 0; x < PASSWORD_LENGTH; x++)
                     {
                         String passwordChar;
-                        passwordChar = password[x].ToString(); 
+                        Console.WriteLine(password[x]);
+                        passwordChar = password[x].ToString();
+                        Console.WriteLine(passwordChar);
                         writer.Write(passwordChar);
+                        writer.WriteLine("x");
                     }
                     writer.WriteLine();
                 }
+                writer.Close();
                 outputLabel.ForeColor = System.Drawing.Color.Black;
                 outputLabel.Text = ("Your passwords have been saved to: " + saveFileDialog.FileName);
                 fillProgress();
