@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.78947F));
@@ -87,9 +87,24 @@
             // 
             this.numberOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numberOfPasswordsUD.Location = new System.Drawing.Point(102, 64);
+            this.numberOfPasswordsUD.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numberOfPasswordsUD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numberOfPasswordsUD.Name = "numberOfPasswordsUD";
             this.numberOfPasswordsUD.Size = new System.Drawing.Size(192, 20);
             this.numberOfPasswordsUD.TabIndex = 1;
+            this.numberOfPasswordsUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numberOfPasswordsUD.ValueChanged += new System.EventHandler(this.numberOfPasswordsUD_ValueChanged);
             // 
             // savePasswordsButton
@@ -165,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(397, 170);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "randomPasswordGeneratorForm";
             this.Text = "Random Password Generator";
             this.tableLayoutPanel1.ResumeLayout(false);

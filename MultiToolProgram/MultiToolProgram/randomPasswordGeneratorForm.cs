@@ -16,21 +16,21 @@ namespace MultiToolProgram
         //Variable Declaration
         decimal numberOfPasswords = 0;
         static int PASSWORD_LENGTH = 16;
-        char[] password = new char[16];
+        String[] password = new String[16];
         Boolean progressBarFull = false;
         Boolean errorOccured = false;
         //Array of characters that are allowed in the normal password type
-        char[] normalPasswordArray = new char[52]{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+        String[] normalPasswordArray = new String[52]{"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
         //Array of characters that are allowed in the numbers password type
-        char[] numbersPasswordArray = new char[62] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0'};
+        String[] numbersPasswordArray = new String[62] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"};
         //Array of characters that are allowed in the special password type
-        char[] specialPasswordArray = new char[77] {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','!','@','#','$','%','^','&','*','_','-','+','=','<','>','?'};
+        String[] specialPasswordArray = new String[77] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","_","-","+","=","<",">","?"};
         //Creates variables for which kind of password to use.
         Boolean normalPass;
         Boolean numberPass;
         Boolean specialCharPass;
         //Creates a random number generator
-        Random gen = new Random();
+        Random gen = new Random(Guid.NewGuid().GetHashCode());
         //End of Variable Declaration
 
         public randomPasswordGeneratorForm()
@@ -45,7 +45,7 @@ namespace MultiToolProgram
             numberPass = Properties.Settings.Default.randomPassNumber;
             specialCharPass = Properties.Settings.Default.randomPassSpecialChar;
             
-            for(int i = 0;i <= PASSWORD_LENGTH;i++)
+            for(int i = 0;i < PASSWORD_LENGTH;i++)
             {
                 if (normalPass == true)
                 {
@@ -112,17 +112,12 @@ namespace MultiToolProgram
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(saveFileDialog.FileName);
-                for (int i = 0; i <= numberOfPasswords; i++)
+                for (int i = 0; i < numberOfPasswords; i++)
                 {
                     randomPassword();
                     for (int x = 0; x < PASSWORD_LENGTH; x++)
                     {
-                        String passwordChar;
-                        Console.WriteLine(password[x]);
-                        passwordChar = password[x].ToString();
-                        Console.WriteLine(passwordChar);
-                        writer.Write(passwordChar);
-                        writer.WriteLine("x");
+                        writer.Write(password[i]);
                     }
                     writer.WriteLine();
                 }
