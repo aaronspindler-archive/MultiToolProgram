@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MultiToolProgram
 {
-    public partial class randomPasswordGeneratorForm : Form
+    public partial class rpForm : Form
     {
         //@author xNovax
         //Variable Declaration
@@ -33,7 +33,7 @@ namespace MultiToolProgram
         Random gen = new Random(Guid.NewGuid().GetHashCode());
         //End of Variable Declaration
 
-        public randomPasswordGeneratorForm()
+        public rpForm()
         {
             InitializeComponent();
         }

@@ -20,7 +20,7 @@ namespace MultiToolProgram
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new AboutBox();
+            var frm = new programInfo();
             frm.Show(this);
         }
 
@@ -43,7 +43,7 @@ namespace MultiToolProgram
 
         private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new randomPasswordGeneratorForm();
+            var frm = new rpForm();
             frm.Show(this);
         }
     }

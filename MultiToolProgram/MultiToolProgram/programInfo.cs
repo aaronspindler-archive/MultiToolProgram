@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace MultiToolProgram
 {
-    partial class AboutBox : Form
+    partial class programInfo : Form
     {
         //@author xNovax
-        public AboutBox()
+        public programInfo()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

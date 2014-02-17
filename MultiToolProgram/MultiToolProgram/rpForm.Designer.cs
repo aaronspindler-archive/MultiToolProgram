@@ -1,6 +1,6 @@
 ﻿namespace MultiToolProgram
 {
-    partial class randomPasswordGeneratorForm
+    partial class rpForm
     {
         /// <summary>
         /// Required designer variable.
