@@ -34,9 +34,7 @@
             this.passwordTitle = new System.Windows.Forms.Label();
             this.passwordField = new System.Windows.Forms.MaskedTextBox();
             this.loginButton = new System.Windows.Forms.Button();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -113,11 +111,6 @@
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,7 +122,6 @@
             this.Load += new System.EventHandler(this.loginForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,7 +133,6 @@
         private System.Windows.Forms.TextBox usernameField;
         private System.Windows.Forms.Label passwordTitle;
         private System.Windows.Forms.MaskedTextBox passwordField;
-        private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Button loginButton;
     }
 }
