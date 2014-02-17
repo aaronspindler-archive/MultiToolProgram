@@ -30,7 +30,7 @@ namespace MultiToolProgram
         Boolean numberPass;
         Boolean specialCharPass;
         //Creates a random number generator
-        Random gen = new Random(Guid.NewGuid().GetHashCode());
+        Random gen = new Random();
         //End of Variable Declaration
 
         public rpForm()
@@ -49,22 +49,22 @@ namespace MultiToolProgram
             {
                 if (normalPass == true)
                 {
-                    int x = gen.Next(52);
-                    password[i] = normalPasswordArray[x];
+                    int rand1 = gen.Next(52);
+                    password[i] = normalPasswordArray[rand1];
                 }
                 else
                 {
                     if (numberPass == true)
                     {
-                        int x = gen.Next(62);
-                        password[i] = numbersPasswordArray[x];
+                        int rand2 = gen.Next(62);
+                        password[i] = numbersPasswordArray[rand2];
                     }
                     else
                     {
                         if (specialCharPass == true)
                         {
-                            int x = gen.Next(77);
-                            password[i] = specialPasswordArray[x];
+                            int rand3 = gen.Next(77);
+                            password[i] = specialPasswordArray[rand3];
                         }
                     }
                 }
@@ -114,9 +114,9 @@ namespace MultiToolProgram
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(saveFileDialog.FileName);
                 for (int i = 0; i < numberOfPasswords; i++)
                 {
-                    randomPassword();
                     for (int x = 0; x < PASSWORD_LENGTH; x++)
                     {
+                        randomPassword();
                         writer.Write(password[i]);
                     }
                     writer.WriteLine();
