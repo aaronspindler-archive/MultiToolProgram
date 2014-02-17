@@ -18,8 +18,6 @@ namespace MultiToolProgram
         String password;
         Boolean firstLoad = Properties.Settings.Default.firstLoad;
         Boolean loginSuccessful;
-        Boolean usernameHasText = false;
-        Boolean passwordHasText = false;
         //End of Variable Declaration
 
         public loginForm()
@@ -32,14 +30,10 @@ namespace MultiToolProgram
            if ((usernameField.Text == (""))||(passwordField.Text == ("")))
            {
                loginButton.Enabled = false;
-               usernameHasText = false;
-               passwordHasText = false;
            }
            else
            {
                loginButton.Enabled = true;
-               usernameHasText = true;
-               passwordHasText = true;
            }
         }
 
@@ -79,8 +73,6 @@ namespace MultiToolProgram
         private void loginButton_Click(object sender, EventArgs e)
         {
             checkForText();
-            Console.WriteLine(username);
-            Console.WriteLine(password);
             if ((username.Equals("xNovax"))&&(password.Equals("password")))
             {
                 loginSuccessful = true;

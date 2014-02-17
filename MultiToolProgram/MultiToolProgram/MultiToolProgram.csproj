@@ -143,6 +143,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="change-log.txt" />
+    <Content Include="passwords.txt" />
+    <Content Include="users.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

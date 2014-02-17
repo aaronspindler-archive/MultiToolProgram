@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MultiToolProgram")]
-[assembly: AssemblyDescription("A compilation of useful programs that I use daily")]
+[assembly: AssemblyDescription("A compilation of programs that I find useful. It is also a testing ground for new things that I find.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xNovax")]
 [assembly: AssemblyProduct("MultiToolProgram")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("1.0.*")]
+[assembly: AssemblyVersion("0.0.0.1")]
+[assembly: AssemblyFileVersion("0.0.0.1")]
