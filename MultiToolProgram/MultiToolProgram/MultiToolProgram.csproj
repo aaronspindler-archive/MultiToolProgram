@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MultiToolProgram</RootNamespace>
-    <AssemblyName>MultiToolProgram</AssemblyName>
+    <AssemblyName>Multi-Tool Program</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
@@ -25,7 +25,7 @@
     <InstallUrl>http://www.xnovax.net/program_downloads/multitoolprogram.htm/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -40,6 +40,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -81,11 +82,11 @@
     <Compile Include="programInfo.Designer.cs">
       <DependentUpon>programInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="createYourUserForm.cs">
+    <Compile Include="createAUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="createYourUserForm.Designer.cs">
-      <DependentUpon>createYourUserForm.cs</DependentUpon>
+    <Compile Include="createAUserForm.Designer.cs">
+      <DependentUpon>createAUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
@@ -129,8 +130,8 @@
     <EmbeddedResource Include="programInfo.resx">
       <DependentUpon>programInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="createYourUserForm.resx">
-      <DependentUpon>createYourUserForm.cs</DependentUpon>
+    <EmbeddedResource Include="createAUserForm.resx">
+      <DependentUpon>createAUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
@@ -175,8 +176,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="change-log.txt" />
-    <Content Include="passwords.txt" />
-    <Content Include="users.txt" />
+    <Content Include="to-do_list.txt" />
+    <Content Include="userInformation.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.78947F));
@@ -67,7 +67,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.78947F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.78947F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.78947F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(794, 327);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(397, 170);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // amountOfPasswordsTitle
@@ -76,10 +76,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.amountOfPasswordsTitle, 3);
             this.amountOfPasswordsTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.amountOfPasswordsTitle.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountOfPasswordsTitle.Location = new System.Drawing.Point(6, 51);
-            this.amountOfPasswordsTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.amountOfPasswordsTitle.Location = new System.Drawing.Point(3, 26);
             this.amountOfPasswordsTitle.Name = "amountOfPasswordsTitle";
-            this.amountOfPasswordsTitle.Size = new System.Drawing.Size(782, 68);
+            this.amountOfPasswordsTitle.Size = new System.Drawing.Size(391, 35);
             this.amountOfPasswordsTitle.TabIndex = 0;
             this.amountOfPasswordsTitle.Text = "Enter the amount of passwords you want";
             this.amountOfPasswordsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,8 +86,7 @@
             // numberOfPasswordsUD
             // 
             this.numberOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numberOfPasswordsUD.Location = new System.Drawing.Point(204, 125);
-            this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(6);
+            this.numberOfPasswordsUD.Location = new System.Drawing.Point(102, 64);
             this.numberOfPasswordsUD.Maximum = new decimal(new int[] {
             10,
             0,
@@ -100,7 +98,7 @@
             0,
             0});
             this.numberOfPasswordsUD.Name = "numberOfPasswordsUD";
-            this.numberOfPasswordsUD.Size = new System.Drawing.Size(385, 31);
+            this.numberOfPasswordsUD.Size = new System.Drawing.Size(192, 20);
             this.numberOfPasswordsUD.TabIndex = 1;
             this.numberOfPasswordsUD.Value = new decimal(new int[] {
             1,
@@ -112,10 +110,9 @@
             // savePasswordsButton
             // 
             this.savePasswordsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.savePasswordsButton.Location = new System.Drawing.Point(204, 176);
-            this.savePasswordsButton.Margin = new System.Windows.Forms.Padding(6);
+            this.savePasswordsButton.Location = new System.Drawing.Point(102, 90);
             this.savePasswordsButton.Name = "savePasswordsButton";
-            this.savePasswordsButton.Size = new System.Drawing.Size(385, 39);
+            this.savePasswordsButton.Size = new System.Drawing.Size(192, 20);
             this.savePasswordsButton.TabIndex = 2;
             this.savePasswordsButton.Text = "Save Passwords";
             this.savePasswordsButton.UseVisualStyleBackColor = true;
@@ -126,10 +123,9 @@
             this.outputLabel.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.outputLabel, 3);
             this.outputLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.outputLabel.Location = new System.Drawing.Point(6, 221);
-            this.outputLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.outputLabel.Location = new System.Drawing.Point(3, 113);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(782, 51);
+            this.outputLabel.Size = new System.Drawing.Size(391, 26);
             this.outputLabel.TabIndex = 3;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -137,10 +133,9 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.progressBar, 3);
             this.progressBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar.Location = new System.Drawing.Point(6, 278);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(6);
+            this.progressBar.Location = new System.Drawing.Point(3, 142);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(782, 43);
+            this.progressBar.Size = new System.Drawing.Size(391, 25);
             this.progressBar.TabIndex = 4;
             // 
             // menuStrip1
@@ -152,8 +147,7 @@
             this.optionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(794, 51);
+            this.menuStrip1.Size = new System.Drawing.Size(397, 26);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -162,20 +156,20 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 43);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 43);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -185,12 +179,12 @@
             // 
             // rpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 327);
+            this.ClientSize = new System.Drawing.Size(397, 170);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "rpForm";
             this.Text = "Random Password Generator";
             this.tableLayoutPanel1.ResumeLayout(false);

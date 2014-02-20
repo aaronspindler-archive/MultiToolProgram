@@ -16,7 +16,6 @@ namespace MultiToolProgram
         //Variable Declaration Start
         String username;
         String password;
-        Boolean firstLoad = Properties.Settings.Default.firstLoad;
         Boolean loginSuccessful;
         //End of Variable Declaration
 
@@ -39,9 +38,13 @@ namespace MultiToolProgram
 
         private void loginForm_Load(object sender, EventArgs e)
         {
+            Boolean firstLoad = Properties.Settings.Default.firstLoad;
+            //Remove before release.
+            firstLoad = true;
+            //Remove before release.
             if (firstLoad == true)
             {
-                var frm = new createYourUserForm();
+                var frm = new createAUserForm();
                 frm.Show(this);
                 firstLoad = false;
             }
